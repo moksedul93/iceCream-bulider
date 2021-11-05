@@ -3,7 +3,7 @@ import Item from "../Items/Item/Item"
 
 const Items = ({items, add, remove}) => {
     const flavors = Object.keys(items)
-    console.log(remove)
+
     return (
         <div>
             <ul>
@@ -12,4 +12,4 @@ const Items = ({items, add, remove}) => {
         </div>
     )
 }
-export default Items;
+export default Items; 

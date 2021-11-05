@@ -8,16 +8,17 @@ const Item = ({ name, add, remove }) => {
         <span>{name}</span>
         <span className={Classes.quantity}>2</span>
         <div className="right">
-        {/* onClick={add.bind(this, name)} */}
           <button
             type="button"
             className={[Classes.plus, Classes.rounded].join(" ")}
+            onClick={()=>add(name)}
           >
             +
           </button>
-          {/* onClick={remove.bind(this, name)} */}
           <button 
             type="button"
+          onClick={()=>remove(name)}
+
             className={[Classes.minus, Classes.rounded].join(" ")}
           >
             -
